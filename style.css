@@ -128,6 +128,7 @@ body{
 }
 /*........................ main............................*/
 .banner{
+    position:relative;
     max-height:500px;
 }
 .banner__img{
@@ -139,4 +140,48 @@ body{
     .banner__img{
         height: 100vw;
     }
+}
+.banner__block{
+    position:absolute;
+    top:122px;
+    left:405px;
+    max-width:463px;
+    max-height:257px;
+    border-radius:10px;
+    padding:30px 50px 40px 40px;
+    background-color:#FFFFFF;
+}
+.banner__p{
+    font-family: Cormorant Garamond;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+}
+.banner__box{
+    margin-top:20px;
+}
+.banner__box p{
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    color: #407014;
+    text-decoration:underline;
+    margin-right:5px;
+}
+.banner__5circles{
+    position:absolute;
+    bottom:20px;
+    margin-left:auto;
+    margin-left:50%;
+}
+.banner__5circles div{
+    width:8px;
+    height:8px;
+    border-radius:4px;
+    border:1px solid #FFFFFF;
+    margin-left:10px;
+    margin-right:10px;
+}
+.white{
+    background-color:white;
 }
