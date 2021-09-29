@@ -17,7 +17,7 @@ body{
 .align_items_center{
     align-items: center;
 }
-
+/*...............header.....................*/
 .nav{
     color:#444444;
     font-family: Rubik;
@@ -126,4 +126,17 @@ body{
     margin-right:25px;
  
 }
+/*........................ main............................*/
+.banner{
+    max-height:500px;
+}
+.banner__img{
+    width:100%;
+    height: 500px;
+}
 
+@media (max-width: 500px) {
+    .banner__img{
+        height: 100vw;
+    }
+}
