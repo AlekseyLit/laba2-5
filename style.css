@@ -17,7 +17,7 @@ body{
 .align_items_center{
     align-items: center;
 }
-
+/*...............header.....................*/
 .nav{
     color:#444444;
     font-family: Rubik;
@@ -25,33 +25,25 @@ body{
     font-weight: 400;
     text-align: left;
 }
-
 .nav__row {
     height:50px;
     border-bottom: 1px solid   #dddbdb;
-    
 }
  .border-right{
      border-right:1px solid   #dddbdb ;
-
- }
-
+}
 .nav__ul{
     list-style-type: none;
- }
- 
+}
  .nav__li{
     margin-right: 30px;
 }
-
 .margin-right-60{
     margin-right: 60px;
 }
-
 .nav__row__box{
     margin-left: 30px;
 }
-
 .nav__svg {
     width: 16px;
     height: 16px;
@@ -61,11 +53,10 @@ body{
     color:#444444;
 }
 .contacts{
-    height:86px;
+    min-height:86px;
     color: #444444;
     font-family: Rubik;
 }
-
 .contacts__logo{
     margin-right: 150px;
 }
@@ -94,16 +85,17 @@ body{
     font-weight: 400;
     margin-left:10px;
 }
- 
+.contacts__burger{
+    display: none;
+}
 .font-size-16{
     font-size: 16px;
 }
 .margin-left-25 {
     margin-left: 25px;
 }
-
 .menu{
-    height: 50px;
+    max-height: 50px;
     background-image: linear-gradient(90deg, #3cb950 0%, #13dd33 100%);
 }
 .menu__ul{
@@ -126,4 +118,218 @@ body{
     margin-right:25px;
  
 }
+@media (max-width: 1024px) {
+    .menu__li a{
+        font-size:14px;
+        margin-left:20px;
+        margin-right:20px;
+    }  
+}
+/*........................ main............................*/
+.banner{
+    position:relative;
+    flex-direction: column;
+    width:100%;
+    max-height:500px;
+}
+.banner__img{
+    width:100%;
+    height: 500px;
+}
+@media (max-width: 500px) {
+    .banner__img{
+        height: 100vw;
+    }
+}
+.banner__block{
+    position:absolute;
+    bottom:122px;
+    margin-right: 250px;
+    max-width:463px;
+    max-height:257px;
+    border-radius:10px;
+    padding:30px 50px 40px 40px;
+    background-color:#FFFFFF;
+    opacity: 95%;
+}
+.banner__p{
+    font-family: Cormorant Garamond;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+}
+.banner__box{
+    margin-top:20px;
+}
+.banner__box p{
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    color: #407014;
+    text-decoration:underline;
+    margin-right:5px;
+}
+.banner__5circles{
+    position:absolute;
+    bottom:20px;
+}
+.banner__5circles div{
+    width:8px;
+    height:8px;
+    border-radius:4px;
+    border:1px solid #FFFFFF;
+    margin-left:10px;
+    margin-right:10px;
+}
+.fill{
+    background-color:white;
+}
+@media (max-width: 1024px) {
+    .border-right{
+        border-right: 0;
+    }
+    .banner__block{
+        margin-right: 0px;
+    }
+    .banner__p{
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+.nav{
+    display: none;
+}
+.contacts__phones{
+    display: none;
+}
+.contacts__information{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.contacts__burger{
+    display: block;
+}
+.banner__block{
+    bottom:50px;
+    padding:30px 30px 30px 30px;
+}
+.banner__p{
+    font-size: 25px;
+}
+}
+@media (max-width: 425px) {
+    .favorites{
+        display: none;
+    }
+    .contacts__logo{
+        margin-right: 10px;
+    }
+    .contacts__logo img{
+        width: 150px;
+    }
+    .banner__block{
+        bottom:40px;
+        padding:20px 40px;
+    }
+    .banner__p{
+        font-size: 20px;
+    }
+    .banner__5circles{
+        bottom:-20px;
+    }
+    .banner__5circles div{
+        border:1px solid #3cb950;
+    }
+    .fill{
+        background-color:#3cb950;
+    } 
+}
+.delivery-menu{
+    flex-direction: column;
+}
+.delivery-menu__row{
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 300;
+    color: #444444;
+}
+.delivery-menu__heading{
+    font-family: Cormorant Garamond;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #444444;
+    margin-top:60px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.delivery-menu__row{
 
+}
+
+.delivery-menu__row img{
+    width: 18px;
+    height: 18px;
+    margin-right: 23px;
+}
+.delivery-menu__price p{
+    margin-right: 65px;
+    margin-left: 25px;
+}
+.delivery-menu__flowers p{
+    margin-right: 143px;
+    margin-left: 23px;
+}
+.delivery-menu__whom p{
+    margin-right: 63px;
+    margin-left: 23px;
+}
+.delivery-menu__occasion p{
+    margin-right: 143px;
+    margin-left: 23px;
+}
+.delivery-menu__style p{
+    margin-right: 63px;
+    margin-left: 23px;
+}
+.border-left{
+    border-left:1px solid #d6d1d1;
+}
+.delivery-menu__row div{
+    min-height:64px;
+    background: #F5F9EC;
+}
+@media (max-width: 1024px){
+    .delivery-menu__flowers p{
+        margin-right: 65px;
+    }
+    .delivery-menu__occasion p{
+        margin-right: 65px;
+    }
+
+}
+@media (max-width: 768px){
+    .border-left{
+        border-left:0;
+        border-bottom:1px solid #d6d1d1;
+    }
+    .delivery-menu__price{
+        border-bottom:1px solid #d6d1d1;
+
+    }
+    .delivery-menu__row div{
+        min-height:40px;
+        min-width:90%;
+        justify-content: space-between;
+        
+    }
+    .delivery-menu__row p{
+      margin-left:20px;
+      margin-right:0;  
+    }
+    .delivery-menu__row img{
+        margin-right:20px;  
+      }
+}

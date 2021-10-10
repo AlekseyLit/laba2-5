@@ -45,7 +45,7 @@
         <div class="contacts  flex  justify_center  align_items_center">
 
             <div class="contacts__logo">
-                <img src="media/logo.png" alt="logo" width="206" height="54">
+                <img src="media/logo.png" alt="logo" width="206" >
             </div>
 
             <div class="contacts__phones">
@@ -65,13 +65,16 @@
             </div>
 
             <div class="contacts__customer-block flex">
-                <div class="contacts_wrap  flex   align_items_center">
+                <div class="contacts_wrap  flex   align_items_center favorites">
                     <img src="media/heart.svg"  width="28" height="28" alt="heart">
                     <p class="contacts__p"><a href="index.html">Избранное</a></p>
                 </div>
                 <div class="contacts_wrap flex  align_items_center  margin-left-25">
                     <img src="media/basket.svg" width="32" height="28" alt="map" > 
                     <p class="contacts__p  font-size-16">0 ₽</p>
+                </div> 
+                <div class="contacts_wrap flex  align_items_center  margin-left-25">
+                    <img class="contacts__burger"src="media/burger.svg" width="32" height="28" alt="map" > 
                 </div> 
             </div>
         </div>
@@ -92,6 +95,58 @@
     </header>
 
     <main>
+        <section class="banner flex align_items_center">
+            <picture>
+                <source media="(min-width:2500px)" srcset="media/banner-2600px.png">
+                <source media="(min-width:1024px)" srcset="media/banner-1900px.png">
+                <source media="(min-width:768px)" srcset="media/banner-1000px.png">
+                <img class="banner__img" src="media/banner-320px.png" alt="banner">
+            </picture>
+            <div class="banner__block">
+                <p class="banner__p">Всегда в продаже <br> более 100 готовых <br>дизайнерских букетов</p>
+                <div class="banner__box flex align_items_center">
+                    <p>Перейти в каталог</p>
+                    <img src="media/angle-right.svg">
+                </div>
+            </div>
+            <div class="banner__5circles flex">
+                <div class="fill"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+
+        <section class="delivery-menu  flex  justify_center align_items_center ">
+            <p class="delivery-menu__heading">Доставка цветов в Москве</p>
+
+            <div class="delivery-menu__row  flex justify_center">
+                <div class="delivery-menu__price  flex align_items_center">
+                    <p>Цена...</p>
+                    <img src="media/angle-down.svg" alt="angle-down">
+                </div>
+                <div class="delivery-menu__flowers  flex align_items_center border-left">
+                    <p>Цветы...</p>
+                    <img src="media/angle-down.svg" alt="angle-down">
+                </div>
+                <div class="delivery-menu__whom  flex align_items_center  border-left">
+                    <p>Кому...</p>
+                    <img src="media/angle-down.svg" alt="angle-down">
+                </div>
+                <div class="delivery-menu__occasion  flex align_items_center  border-left">
+                    <p>Повод...</p>
+                    <img src="media/angle-down.svg" alt="angle-down">
+                </div>
+                <div class="delivery-menu__style  flex align_items_center border-left">
+                    <p>Стиль...</p>
+                    <img src="media/angle-down.svg" alt="angle-down">
+                </div>
+               
+            </div>
+
+        </section>
 
     </main>
 
