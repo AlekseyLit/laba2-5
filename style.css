@@ -126,6 +126,7 @@ body{
     }  
 }
 /*........................ main............................*/
+/*section banner*/
 .banner{
     position:relative;
     flex-direction: column;
@@ -246,6 +247,7 @@ body{
         background-color:#3cb950;
     } 
 }
+/* section delivery-menu*/
 .delivery-menu{
     flex-direction: column;
 }
@@ -254,6 +256,7 @@ body{
     font-size: 18px;
     font-weight: 300;
     color: #444444;
+    margin-bottom:60px;
 }
 .delivery-menu__heading{
     font-family: Cormorant Garamond;
@@ -264,9 +267,6 @@ body{
     margin-top:60px;
     margin-bottom:20px;
     text-align:center;
-}
-.delivery-menu__row{
-
 }
 
 .delivery-menu__row img{
@@ -332,4 +332,54 @@ body{
     .delivery-menu__row img{
         margin-right:20px;  
       }
+}
+/* section flowers-centers*/
+.flowers-centers{
+    background-color: #FFF5F5;
+    flex-direction:column;
+}
+.flowers-centers__p{
+    font-family: Cormorant Garamond;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top:40px;
+    text-align:center;
+    color: #444444;
+}
+.flowers-centers__row{
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+.flowers-centers__box{
+    min-width:350px;
+    margin-left:30px;
+}
+.flowers-centers__box p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    padding:8px 0 8px 12px;
+    height:40px;
+}
+.flowers-centers__box a{
+    color: #444444;
+}
+.flowers-centers__box a:hover{
+    color: #FFFFFF;
+}
+.flowers-centers__box p:hover{
+    background-color:#FF5555;
+    width:290px;
+    border-radius:5px;
+}
+@media (max-width: 425px){
+    .flowers-centers__box{
+        min-width:290px;
+    }
+    .flowers-centers__box p{
+        font-size: 18px;
+    }
+    .flowers-centers__box p:hover{
+        width:280px;
+    }
 }
