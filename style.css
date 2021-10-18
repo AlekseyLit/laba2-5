@@ -587,7 +587,7 @@ body{
 }
 @media (max-width: 768px){
     .news__inner{
-        max-width:540px;
+        max-width:500px;
         margin-right:0;
     }
     .news__inner__box{
@@ -601,12 +601,112 @@ body{
 }
 @media (max-width: 425px){
     .news__inner{
-        max-width:400px;
+        max-width:330px;
     }
 }
 @media (max-width: 375px){
     .news__inner{
-        max-width:300px;
+        max-width:290px;
+    }
+}
+/* section Subscription*/
+.subscription{
+    min-height:120px;
+    background-color:#095E07;
+    opacity:95%;
+    padding:30px 40px 30px 40px;
+}
+.subscription__form{
+    min-height: 52px;
+}
+.subscription__label-1{
+    color:#FFFFFF;
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.subscription__row{
+    border-bottom:1px solid white;
+    margin-left:60px;
+    margin-right:60px;
+    max-height:36px;
+    width:600px;
+    justify-content: space-between;
+}
+.subscription__label-2{
+    color:#FFFFFF;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.subscription__email{
+    background-color:transparent;
+    border:0;
+    color:white;
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 400;
+}
+.subscription__button{
+    height: 50px;
+    width: 195px;
+    border-radius: 50px;
+    padding: 15px 30px 15px 30px;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4BB45E;
+    border:0;
+}
+@media (max-width: 1024px){
+    .subscription__form{
+        min-height: 52px;
+        justify-content:center;
+    }
+    .subscription__row{
+        margin-right:0;
+    }
+    .subscription__form div:last-child{
+        margin-top:15px;
+    }
+}
+@media (max-width: 768px){
+    .subscription__row{
+        margin-top:10px;
+        margin-left:0;
+        padding-bottom:9px;
+        max-width:600px;
+    }
+    .subscription__form{
+        text-align: center;
+    }
+    
+}
+@media (max-width: 425px){
+    .subscription__form{
+        min-height: 65px;
+    }
+    .subscription__row{
+        max-width:200px;
+        border:0;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .subscription__row div{
+        border-bottom:1px solid white;
+        display:flex;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+    .subscription__email{
+        text-align: center;
+    }
+    .subscription__label-2{
+        max-width:140px;
+        line-height: 17px;
     }
 }
 
