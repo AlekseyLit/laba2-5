@@ -333,6 +333,12 @@ body{
         margin-right:20px;  
       }
 }
+@media (max-width: 425px){
+    .delivery-menu__heading{
+        font-size:22px;
+        width:220px;
+    }
+}
 /* section flowers-centers*/
 .flowers-centers{
     background-color: #FFF5F5;
@@ -381,6 +387,9 @@ body{
     }
     .flowers-centers__box p:hover{
         width:280px;
+    }
+    .flowers-centers__p{
+        font-size:22px;
     }
 }
 /* section useful-articles*/
@@ -497,6 +506,9 @@ body{
         margin-left:10px;
         margin-right:10px;
     }
+    .useful-articles__row h2{
+        font-size:22px;
+    }
 }
 /* section NEWS*/
 .news{
@@ -602,6 +614,9 @@ body{
 @media (max-width: 425px){
     .news__inner{
         max-width:330px;
+    }
+    .news__row h2{
+        font-size:22px;
     }
 }
 @media (max-width: 375px){
